@@ -9,19 +9,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- OneSignal SDK -->
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-
-  <script>
-    window.OneSignal = window.OneSignal || [];
-    OneSignal.push(function() {
-      OneSignal.init({
-        appId: "GANTI_DENGAN_APP_ID_ANDA", // <-- Ganti dengan App ID dari OneSignal
-        notifyButton: {
-          enable: true,
-        },
-      });
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6fa43f84-4991-4f9f-bd12-ade0e0f71739",
+      safari_web_id: "web.onesignal.auto.1a1cd43f-104c-4ac2-b069-e07775f1eeb9",
+      notifyButton: {
+        enable: true,
+      },
     });
-  </script>
+  });
+</script>
 
   <!-- Custom Styles -->
   <style>
@@ -112,5 +112,6 @@
     });
   </script>
 
+  
 </body>
 </html>
