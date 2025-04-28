@@ -1,0 +1,10 @@
+{
+    "name": "Pengingat Tagihan Pembayaran",
+    "short_name": "Tagihan",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#6e8efb",
+    "gcm_sender_id": "482941778795"
+  }
+  
